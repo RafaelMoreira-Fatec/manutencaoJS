@@ -24,8 +24,8 @@
         <form>
             <div class="row">
                 <div class="col-md-12">
-                    <Select>
-                        <option>equipamento</option>
+                    <Select id="equipamentos">
+                        <option value="">equipamento</option>
                     </Select>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     <input type="date" disabled>
                 </div>
             </div>
-            <button type="button">Criar chamado</button>
+            <button type="submit">Criar chamado</button>
         </form>
     </div>
     <div class="container section-card hide-section" data-section="open">
@@ -100,6 +100,7 @@
     </div>
 </body>
 
+<script src="../js/utils/equipamentos.js"></script>
 <script src="../js/index.js"></script> 
 
 </html>

@@ -54,3 +54,7 @@ input, select, textarea{
 .active{
     background-color: rgb(202, 202, 202);;
 }
+
+.invalid-value{
+    border-color: rgb(195, 0, 0);
+}
