@@ -1,0 +1,56 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#menu li{
+    cursor: pointer;
+    padding: 20px 10px;
+    margin-right: 20px;
+}
+
+#menu li:hover{
+    background-color: rgb(207, 207, 207);
+}
+
+#menu ul{
+    background-color: rgb(227, 227, 227);
+    font-weight: bold;
+    display: flex;
+    list-style: none;
+}
+
+.section-card, .item-card, #menu{
+    border: 1px solid rgb(227, 227, 227);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px auto;
+}
+
+.section-title{
+    font-size: 2em;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.item-card p{
+margin-top: 5px;
+}
+
+.item-card p span:first-child{
+    font-weight: bolder;
+}
+
+input, select, textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.hide-section{
+    display: none;
+}
+
+.active{
+    background-color: rgb(202, 202, 202);;
+}
