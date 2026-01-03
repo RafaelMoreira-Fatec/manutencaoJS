@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="container" id="menu">
+        <ul class="nav">
+            <li data-tab="new" class="active">Abrir chamado</li>
+            <li data-tab="open">Abertos</li>
+            <li data-tab="doing">Em andamento</li>
+            <li data-tab="closed">Finalizados</li>
+        </ul>
+    </div>
+    <div class="container section-card" id="new-solicitation" data-section="new">
+        <p class="section-title">Solicitar manutenção</p>
+
+        <form>
+            <div class="row">
+                <div class="col-md-12">
+                    <Select>
+                        <option>equipamento</option>
+                    </Select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <textarea name="" id="" placeholder="descrição"></textarea>
+                </div>
+                <div class="col-md-4">
+                    <select id="priority">
+                        <option value="">Selecione a prioridade</option>
+                        <option value="baixa">Baixa</option>
+                        <option value="media">Média</option>
+                        <option value="alta">Alta</option>
+                    </select>
+
+                </div>
+
+                <div class="col-md-4">
+                    <input type="text" placeholder="status" value="Em aberto" disabled>
+
+                </div>
+
+                <div class="col-md-4">
+                    <input type="date" disabled>
+                </div>
+            </div>
+            <button type="button">Criar chamado</button>
+        </form>
+    </div>
+    <div class="container section-card hide-section" data-section="open">
+
+        <p class="section-title">Abertas</p>
+        <div class="item-card">
+            <p><span>Equipamento:</span></p>
+            <p><span>Descrição:</span></p>
+            <p><span>Prioridade:</span></p>
+            <p><span>Status:</span></p>
+            <p><span>Data de abertura:</span></p>
+            <p><span>Equipamento:</span></p>
+        </div>
+    </div>
+
+    <div class="container section-card hide-section" data-section="doing">
+
+        <p class="section-title" >Em andamento</p>
+        <div class="item-card">
+            <p><span>Equipamento:</span></p>
+            <p><span>Descrição:</span></p>
+            <p><span>Prioridade:</span></p>
+            <p><span>Status:</span></p>
+            <p><span>Data de abertura:</span></p>
+            <p><span>Equipamento:</span></p>
+            <p><span>responsavel:</span></p>
+        </div>
+    </div>
+
+    <div class="container section-card hide-section" data-section="closed">
+        <p class="section-title">Finalizadas</p>
+
+        <div class="item-card">
+
+
+            <p><span>Equipamento:</span>fwfwfee</p>
+            <p><span>Descrição:</span></p>
+            <p><span>Prioridade:</span></p>
+            <p><span>Status:</span></p>
+            <p><span>Data de abertura:</span></p>
+            <p><span>Data de encerramento:</span></p>
+            <p><span>Equipamento:</span></p>
+            <p><span>responsavel:</span></p>
+        </div>
+    </div>
+</body>
+
+<script src="../js/index.js"></script> 
+
+</html>
