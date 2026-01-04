@@ -1,60 +1,70 @@
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#menu li{
+#menu li {
     cursor: pointer;
     padding: 20px 10px;
-    margin-right: 20px;
 }
 
-#menu li:hover{
-    background-color: rgb(207, 207, 207);
+#menu li:hover {
+    background-color: rgb(182, 0, 0);
 }
 
-#menu ul{
-    background-color: rgb(227, 227, 227);
+#menu ul {
+    background-color: rgb(91, 0, 0);
     font-weight: bold;
     display: flex;
     list-style: none;
+    color: white;
 }
 
-.section-card, .item-card, #menu{
+.section-card, .item-card, #menu {
     border: 1px solid rgb(227, 227, 227);
     border-radius: 5px;
     padding: 5px;
     margin: 5px auto;
 }
 
-.section-title{
+.section-title {
     font-size: 2em;
     font-weight: bolder;
     text-align: center;
 }
 
-.item-card p{
-margin-top: 5px;
+.item-card p {
+    margin-top: 5px;
 }
 
-.item-card p span:first-child{
+.item-card p span:first-child {
     font-weight: bolder;
 }
 
-input, select, textarea{
+input, select, textarea, button {
     width: 100%;
     padding: 10px;
     margin: 15px 0;
+    border-radius: 5px;
     cursor: pointer;
+    outline: none   ;
 }
 
-.hide-section{
+.hide-section {
     display: none;
 }
 
-.active{
-    background-color: rgb(202, 202, 202);;
+.active {
+    background-color: rgb(182, 0, 0);
 }
 
-.invalid-value{
+.invalid-value {
     border-color: rgb(195, 0, 0);
+}
+
+button {
+    font-weight: bold;
+    color: rgb(182, 0, 0);
+    background-color: transparent;
+    border: 2px solid rgb(182, 0, 0);
+    font-size: 1.5em;
 }
