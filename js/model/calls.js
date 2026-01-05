@@ -1,5 +1,6 @@
 class Calls {
-    constructor(equipamento, descricao, prioridade, status, data) {
+
+    constructor(equipamento = "", descricao = "", prioridade = "", status = "", data = "") {
         this.equipamento = equipamento;
         this.descricao = descricao;
         this.prioridade = prioridade;
@@ -9,6 +10,7 @@ class Calls {
 
     addCall() {
         const newCall = {
+            id: crypto.randomUUID(),
             equipamento: this.equipamento,
             descricao: this.descricao,
             prioridade: this.prioridade,
@@ -32,5 +34,16 @@ class Calls {
         //     localStorage.setItem("calls", JSON.stringify(calls));
         // }
 
+    }
+
+    getCalls() {
+        const calls = JSON.parse(localStorage.getItem("calls"));
+
+        return calls;
+    }
+
+    updateCalls(calls) {
+        console.log(calls)
+        localStorage.setItem("calls", JSON.stringify(calls));
     }
 }
