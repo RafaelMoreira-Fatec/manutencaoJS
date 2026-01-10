@@ -41,9 +41,31 @@ function Pessoa() {
     hobbie: "Tenis de mesa"
   }
 
+  const background = "myClass";
+
+  const mystyles = {
+    backgroundColor: 'red',
+    fontSize: '2em'
+  }
+
+  const testeBtn = () => {
+    alert('Olá')
+  }
+
+
   return (
+
+
    <>
+   {/* <p className='myClass'> */}
+   <p className={ background}>
+    
     Meu nome é {pessoa.nome} tenho {pessoa.idade}, trabalho como {pessoa.trabalho} e minha atividade favorita é {pessoa.hobbie}
+   </p>
+
+   <button onClick={testeBtn} style={mystyles}>
+    Teste
+   </button>
     </>
   )
 }
