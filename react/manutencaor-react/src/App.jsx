@@ -85,8 +85,11 @@ function Empresa(){
 
   return(
     <>
-    <Funcionario nome="Rafael" setor="entregas" />
-    <Funcionario nome="Lucas" setor="compras" />
+    <Funcionario nome="Rafael" setor="entregas" salario={3000}>
+      <span> --- Estou animado com meu trabalho hoje</span>
+    </Funcionario>
+    <Funcionario nome="Lucas" setor="compras" entrada="7AM"/>
+    <Funcionario nome="Elton" entrada="2PM"/>
     </>
   )
 }
