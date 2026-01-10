@@ -38,18 +38,25 @@ function Pessoa() {
     nome: "Rafael",
     idade: 26,
     trabalho: "Soldador",
-    hobbie: "Tenis de mesa"
+    hobbie: "Tenis de mesa",
+    salario: 1000
   }
+
+  const estaEmpregado = true
 
   const background = "myClass";
 
-  const mystyles = {
-    backgroundColor: 'red',
-    fontSize: '2em'
-  }
+  // const mystyles = {
+  //   backgroundColor: 'red',
+  //   fontSize: '2em'
+  // }
 
-  const testeBtn = () => {
-    alert('Olá')
+  // const testeBtn = () => {
+  //   alert('Olá')
+  // }
+
+  const showParagraph = {
+    display: estaEmpregado ? 'block' : 'none'
   }
 
 
@@ -60,12 +67,13 @@ function Pessoa() {
    {/* <p className='myClass'> */}
    <p className={ background}>
     
-    Meu nome é {pessoa.nome} tenho {pessoa.idade}, trabalho como {pessoa.trabalho} e minha atividade favorita é {pessoa.hobbie}
+    Meu nome é {pessoa.nome} tenho {pessoa.idade}, { estaEmpregado ? 'trabalho como ' + pessoa.trabalho : 'no momento estou desempregado'} e minha atividade favorita é {pessoa.hobbie}
    </p>
+   <p style={showParagraph}>meu salario é {pessoa.salario}</p>
 
-   <button onClick={testeBtn} style={mystyles}>
+   {/* <button onClick={testeBtn} style={mystyles}>
     Teste
-   </button>
+   </button> */}
     </>
   )
 }
