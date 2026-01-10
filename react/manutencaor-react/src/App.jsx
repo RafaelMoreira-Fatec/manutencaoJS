@@ -1,4 +1,5 @@
 import './App.css'
+import Funcionario from './components/Funcionario';
 
 // function App() {
 
@@ -32,50 +33,64 @@ import './App.css'
 //   );
 // }
 
-function Pessoa() {
+// function Pessoa() {
 
-  const pessoa = {
-    nome: "Rafael",
-    idade: 26,
-    trabalho: "Soldador",
-    hobbie: "Tenis de mesa",
-    salario: 1000
-  }
+//   const pessoa = {
+//     nome: "Rafael",
+//     idade: 26,
+//     trabalho: "Soldador",
+//     hobbie: "Tenis de mesa",
+//     salario: 1000
+//   }
 
-  const estaEmpregado = true
+//   const estaEmpregado = true
 
-  const background = "myClass";
+//   const background = "myClass";
 
-  // const mystyles = {
-  //   backgroundColor: 'red',
-  //   fontSize: '2em'
-  // }
+//   // const mystyles = {
+//   //   backgroundColor: 'red',
+//   //   fontSize: '2em'
+//   // }
 
-  // const testeBtn = () => {
-  //   alert('Olá')
-  // }
+//   // const testeBtn = () => {
+//   //   alert('Olá')
+//   // }
 
-  const showParagraph = {
-    display: estaEmpregado ? 'block' : 'none'
-  }
-
-
-  return (
+//   const showParagraph = {
+//     display: estaEmpregado ? 'block' : 'none'
+//   }
 
 
-   <>
-   {/* <p className='myClass'> */}
-   <p className={ background}>
+//   return (
+
+
+//    <>
+//    {/* <p className='myClass'> */}
+//    <p className={ background}>
     
-    Meu nome é {pessoa.nome} tenho {pessoa.idade}, { estaEmpregado ? 'trabalho como ' + pessoa.trabalho : 'no momento estou desempregado'} e minha atividade favorita é {pessoa.hobbie}
-   </p>
-   <p style={showParagraph}>meu salario é {pessoa.salario}</p>
+//     Meu nome é {pessoa.nome} tenho {pessoa.idade}, { estaEmpregado ? 'trabalho como ' + pessoa.trabalho : 'no momento estou desempregado'} e minha atividade favorita é {pessoa.hobbie}
+//    </p>
+//    <p style={showParagraph}>meu salario é {pessoa.salario}</p>
 
-   {/* <button onClick={testeBtn} style={mystyles}>
-    Teste
-   </button> */}
+//    {/* <button onClick={testeBtn} style={mystyles}>
+//     Teste
+//    </button> */}
+//     </>
+//   )
+// }
+
+
+
+function Empresa(){
+
+  return(
+    <>
+    <Funcionario nome="Rafael" setor="entregas" />
+    <Funcionario nome="Lucas" setor="compras" />
     </>
   )
 }
 
-export default Pessoa;
+
+
+export default Empresa;
